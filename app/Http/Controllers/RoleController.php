@@ -16,10 +16,10 @@ class RoleController extends Controller
 
     public function Create()
     {
-        $user = User::findOrFail(8);
-        $role = Role::where("id", "<", 4)->get();
+        /* $role = new Role();
+        $role->role_name = "user";
+        $role->save();
 
-        $user->roles()->syncWithoutDetaching($role);
-        return $user;
+        return $role; */
     }
 }
